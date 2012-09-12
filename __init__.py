@@ -63,7 +63,6 @@ class CrossOriginResourceSharing(object):
     def check_origin(self, pattern):
         origin = request.headers.get('Origin', '')
         allowed = False
-        print pattern
         if isinstance(pattern, basestring):
             if origin == pattern:
                 allowed = True
